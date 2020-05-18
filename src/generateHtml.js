@@ -1,5 +1,6 @@
 const generateHtml = employeeData => {
     const employeeDataArr = employeeData.map(obj => {
+        /* Check if manager */
         if (obj.role.toLowerCase() == 'manager'){
         return `
 
@@ -14,7 +15,7 @@ const generateHtml = employeeData => {
 </div>
 
 
-          `;} else if (obj.role.toLowerCase() == 'engineer') {
+          `;} else if (obj.role.toLowerCase() == 'engineer') { /* Check if engineer */
             return `
 
 <div class = "card">
@@ -27,7 +28,7 @@ const generateHtml = employeeData => {
     <p>Github Username: <span><a href = "https://www.github.com/${obj.github}">${obj.github}</a></span></p>
 </div>
 
-            `;
+            `; /* Check if Intern */
           } else if (obj.role.toLowerCase() == 'intern') {
             return `
     
@@ -63,17 +64,5 @@ const generateHtml = employeeData => {
 </body>
     `
 }
-
- // <div class = "container">    
-    //     <div class = "card">
-    //         <div class = "card-header">
-    //             <h3>Anshul</h3>
-    //             <i class="fas fa-mug-hot"><h3 class = "role">Manager</h3></i>
-    //         </div>
-    //         <p>Id: 31</p>
-    //         <p>Email: sinha.anshul1@gmail.com</p>
-    //         <p>Office Number: 23</p>
-    //     </div>
-    // </div>
 
 module.exports = generateHtml;

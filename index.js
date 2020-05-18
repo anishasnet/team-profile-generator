@@ -7,8 +7,9 @@ const Engineer = require('./lib/engineer.js');
 const Intern = require('./lib/intern.js');
 const Manager = require('./lib/manager.js');
 
-
 let employeeData = [];
+
+/* Manager Questions */
 const managerQuestions = () => {
     return inquirer.prompt([
         {
@@ -83,6 +84,7 @@ const managerQuestions = () => {
     ])
 }
 
+/* Engineer Questions */
 const engineerQuestions = () => {
     return inquirer.prompt([
         {
@@ -157,7 +159,7 @@ const engineerQuestions = () => {
     ])
 }
 
-
+/* Intern Questions */
 const internQuestions = () => {
     return inquirer.prompt([
         {
