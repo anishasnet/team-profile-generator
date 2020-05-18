@@ -8,7 +8,7 @@ const generateHtml = employeeData => {
         <h3>${obj.name}</h3>
         <i class="fas fa-mug-hot"><h3 class = "role">${obj.role}</h3></i>
     </div>
-    <p>Id: ${obj.id}</p>
+    <p>ID: ${obj.id}</p>
     <p>Email: <span><a href = "mailto:${obj.email}">${obj.email}</a></span></p>
     <p>Office Number: ${obj.officeNumber}</p>
 </div>
@@ -22,7 +22,7 @@ const generateHtml = employeeData => {
         <h3>${obj.name}</h3>
         <i class="fas fa-glasses"><h3 class = "role">${obj.role}</h3></i>
     </div>
-    <p>Id: ${obj.id}</p>
+    <p>ID: ${obj.id}</p>
     <p>Email: <span><a href = "mailto:${obj.email}">${obj.email}</a></span></p>
     <p>Github Username: <span><a href = "https://www.github.com/${obj.github}">${obj.github}</a></span></p>
 </div>
@@ -36,7 +36,7 @@ const generateHtml = employeeData => {
         <h3>${obj.name}</h3>
         <i class="fas fa-user-graduate"><h3 class = "role">${obj.role}</h3></i>
     </div>
-    <p>Id: ${obj.id}</p>
+    <p>ID: ${obj.id}</p>
     <p>Email: <span><a href = "mailto:${obj.email}">${obj.email}</a></span></p>
     <p>School: ${obj.school}</span></p>
 </div>
@@ -55,7 +55,7 @@ const generateHtml = employeeData => {
 <link rel="stylesheet" href="./style.css">
 <body>
     <div class = "header-container">
-        <h1 class = "header">Team Portfolio</h1>
+        <h1 class = "header">My Team</h1>
     </div>
     <div class = "container">
         ${employeeDataArr.join('')}
@@ -76,4 +76,4 @@ const generateHtml = employeeData => {
     //     </div>
     // </div>
 
-module.exports = generateHtml
+module.exports = generateHtml;
